@@ -30,7 +30,7 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
     - [Comando 4) pdflatex2c](#Comando-4-pdflatex2c)
     
 	
-## Notas de la version
+## Notas de la versión
 Versión (1.0.0) <b>Fecha de modificación: 18/NOV/2018</b><br>
 Se añade la primer versión del repositorio
 
