@@ -11,7 +11,7 @@ An automated script to install LaTeX and its main libraries for Termux <br>
  
 ## Table of Contents
   - [Release notes](#Release-notes)
-  - [Pre-requisites](#Pre-requisites)
+  - [Pre-requirements](#Pre-requirements)
     - [Write permissions activated](#Write-permissions-activated)
     - [Install Git](#Install-Git)
       - [1) Install Git:](#1-Install-Git)
@@ -23,7 +23,7 @@ An automated script to install LaTeX and its main libraries for Termux <br>
     - [3) Run the termuxtex.sh script](#3-Run-the-termuxtex-script)
   - [Example](#Example)
     - [1) Go to the example folder](#1-Go-to-the-example-folder)
-    - [Command 1) lualatex2ca (recommended)](#Command-1-lualatex2ca-recommended-)
+    - [Command 1) lualatex2ca (recommended)](#Command-1-lualatex2ca-recommended)
     - [Command 2) lualatex2c](#Command-2-lualatex2c)
     - [Command 3) pdflatex2ca](#Command-3-pdflatex2ca)
     - [Command 4) pdflatex2c](#Command-4-pdflatex2c)
