@@ -170,4 +170,4 @@ Wait for it to finish compiling ... <br>
 [Natan Vilchis] (https://natanvilchis.org) <br> 
 
 ## License
-This project is licensed under the MIT license, see [LICENSE] (LICENSE) to see the details.
+This project is licensed under the MIT license, see [LICENSE](LICENSE) to see the details.
