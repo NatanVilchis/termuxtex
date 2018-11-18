@@ -11,13 +11,13 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
  
  
 ## Tabla de contenido
-  - [Notas de la version](#notas-de-la-version)
+  - [Notas de la versión](#notas-de-la-versión)
   - [Pre-requisitos](#pre-requisitos)
     - [Permisos de escritura activados](#permisos-de-escritura-activados)
     - [Instalar Git](#instalar-git)
       - [1) Instalar Git:](#1-instalar-git)
-      - [2) Aceptar la instalación de Git:](#2-aceptar-la-instalacion-de-git)
-      - [3) Esperar hasta que la instalación termine:](#3-esperar-hasta-que-la-instalacion-termine)
+      - [2) Aceptar la instalación de Git:](#2-aceptar-la-instalación-de-git)
+      - [3) Esperar hasta que la instalación termine:](#3-esperar-hasta-que-la-instalación-termine)
   - [Instalación](#instalacion)
     - [1) Obtener TermuxTex](#obtener-termuxtex)
     - [2) Abrir la carpeta termuxtex](#abrir-la-carpeta-termuxtex)
