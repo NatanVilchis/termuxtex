@@ -11,7 +11,7 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
  
  
 ## Tabla de contenido
-  - [Notas de la versión](#notas-de-version)
+  - [Notas de la version](#notas-de-version)
   - [Pre-requisitos](#pre-requisitos)
     - [Permisos de escritura activados](#escritura-activados)
     - [Instalar Git](#instalar-git)
@@ -30,7 +30,7 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
     - [Comando 4) pdflatex2c](#pdflatex2c)
     
 	
-## Notas de la versión
+## Notas de la version
 Versión (1.0.0) <b>Fecha de modificación: 18/NOV/2018</b><br>
 Se añade la primer versión del repositorio
 
