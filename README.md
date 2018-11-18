@@ -159,7 +159,8 @@ Se debe escribir primero pdflatex2c seguido del nombre de archivo principal en L
 Ejemplo:<br>
 ````
 pdflatex2c tarea1
-````<br>
+````
+<br>
 <img src="images/lualatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
 
 Esperar a que termine de compilar... <br>
