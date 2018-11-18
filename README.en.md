@@ -145,7 +145,7 @@ pdflatex2ca tarea1
 
 
 Wait for it to finish compiling ... <br>
-<img src = "images / lualatex2ca_2.jpg" width = "75%" alt = "Example"> <br>
+<img src = "images/lualatex2ca_2.jpg" width = "75%" alt = "Example"> <br>
 Generated PDF (the PDF will be saved in the folder where it is being executed):
  
 <img src="images/lualatex2ca_3.jpg" width="75%" alt="Ejemplo"> <br>
