@@ -10,23 +10,23 @@ An automated script to install LaTeX and its main libraries for Termux <br>
 ![Alt text](images/termuxtex.jpg "TermuxTex")
  
 ## Table of Contents
-  - [Release notes](#notas-de-version)
-  - [Pre-requisites](#pre-requisitos)
-    - [Write permissions activated](#escritura-activados)
-    - [Install Git](#instalar-git)
-      - [1) Install Git:](#instalamos-git)
-      - [2) Accept the installation of Git:](#aceptar-instalacion-git)
-      - [3) Wait until the installation finishes:](#esperar-git)
-  - [Installation](#instalacion)
-    - [1) Get TermuxTex](#obtener-termuxtex)
-    - [2) Open the termuxtex folder](#abrir-termuxtex)
-    - [3) Run the termuxtex.sh script](#ejecutar-script-termuxtex)
-  - [Example](#ejemplo)
-    - [1) Go to the example folder](#carpeta-ejemplo)
-    - [Command 1) lualatex2ca (recommended)](#lualatex2ca)
-    - [Command 2) lualatex2c](#lualatex2c)
-    - [Command 3) pdflatex2ca](#pdflatex2ca)
-    - [Command 4) pdflatex2c](#pdflatex2c)
+  - [Release notes](#Release-notes)
+  - [Pre-requisites](#Pre-requisites)
+    - [Write permissions activated](#Write-permissions-activated)
+    - [Install Git](#Install-Git)
+      - [1) Install Git:](#1-Install-Git)
+      - [2) Accept the installation of Git:](#2-Accept-the-installation-of-Git)
+      - [3) Wait until the installation finishes:](#3-Wait-until-the-installation-finishes)
+  - [Installation](#Installation)
+    - [1) Get TermuxTex](#1-Get-TermuxTex)
+    - [2) Open the termuxtex folder](#2-Open-the-termuxtex-folder)
+    - [3) Run the termuxtex.sh script](#3-Run-the-termuxtex-script)
+  - [Example](#Example)
+    - [1) Go to the example folder](#1-Go-to-the-example-folder)
+    - [Command 1) lualatex2ca (recommended)](#Command-1-lualatex2ca-recommended-)
+    - [Command 2) lualatex2c](#Command-2-lualatex2c)
+    - [Command 3) pdflatex2ca](#Command-3-pdflatex2ca)
+    - [Command 4) pdflatex2c](#Command-4-pdflatex2c)
     
 	
 ## Release notes
@@ -73,7 +73,7 @@ cd termuxtex
 ````
 <img src="images/termuxtex_3.jpg" width="75%" alt="Instalación de TermuxPy"> <br>
 
-### 3) Run the termuxtex.sh script
+### 3) Run the termuxtex script
 In Termux execute the following command:
 ````
 bash termuxtex.sh
