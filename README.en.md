@@ -9,7 +9,6 @@ An automated script to install LaTeX and its main libraries for Termux <br>
 
 ![Alt text](images/termuxtex.jpg "TermuxTex")
  
- 
 ## Table of Contents
   - [Release notes] (#notes-of-version)
   - [Pre-requisites] (#pre-requisites)
