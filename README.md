@@ -75,7 +75,7 @@ cd termuxtex
 ````
 <img src="images/termuxtex_3.jpg" width="75%" alt="Instalación de TermuxPy"> <br>
 
-### 3) Ejecutar el script termuxtex.sh
+### 3) Ejecutar el script termuxtex
 En Termux ejecutar el siguiente comando:
 ````
 bash termuxtex.sh
