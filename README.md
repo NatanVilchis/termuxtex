@@ -51,7 +51,7 @@ Ejecutar en termux el siguiente comando: <br>
 ```
 pkg install git
 ```
-
+ 
 
 <img src="images/git_1.jpg" width="75%" alt="pkg install git"> <br>
 #### 2) Aceptar la instalación de Git:
