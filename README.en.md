@@ -31,11 +31,11 @@ An automated script to install LaTeX and its main libraries for Termux <br>
     
 	
 ## Release notes
-Version (1.0.0) <b> Date modified: 18/NOV/2018 </ b> <br>
+Version (1.0.0) <b> Date modified: 18/NOV/2018 </b> <br>
 The first version of the repository is added
 
 ## Pre-requirements
-It is necessary to have approximately <b> 340 MB </ b> of free space for a correct installation (the size may vary for later updates).
+It is necessary to have approximately <b> 340 MB </b> of free space for a correct installation (the size may vary for later updates).
 
 
 ### Write permissions activated
