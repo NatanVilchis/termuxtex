@@ -23,7 +23,7 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
     - [2) Abrir la carpeta termuxtex](#2-Abrir-la-carpeta-termuxtex)
     - [3) Ejecutar el script termuxtex](#3-Ejecutar-el-script-termuxtex)
   - [Ejemplo ](#ejemplo)
-    - [1) Dirigirse a la carpeta ejemplo ](#dirigirse-a-la-carpeta-ejemplo)
+    - [1) Dirigirse a la carpeta ejemplo ](#1-Dirigirse-a-la-carpeta-ejemplo)
     - [Comando 1) lualatex2ca (recomendado)](#Comando-1-lualatex2ca-(recomendado))
     - [Comando 2) lualatex2c](#Comando-2-lualatex2c)
     - [Comando 3) pdflatex2ca ](#Comando-3-pdflatex2ca)
