@@ -10,23 +10,23 @@ An automated script to install LaTeX and its main libraries for Termux <br>
 ![Alt text](images/termuxtex.jpg "TermuxTex")
  
 ## Table of Contents
-  - [Notas de la versión](#notas-de-version)
-  - [Pre-requisitos](#pre-requisitos)
-    - [Permisos de escritura activados](#escritura-activados)
-    - [Instalar Git](#instalar-git)
-      - [1) Instalar Git:](#instalamos-git)
-      - [2) Aceptar la instalación de Git:](#aceptar-instalacion-git)
-      - [3) Esperar hasta que la instalación termine:](#esperar-git)
-  - [Instalación ](#instalacion)
-    - [1) Obtener TermuxTex](#obtener-termuxtex)
-    - [2) Abrir la carpeta termuxtex](#abrir-termuxtex)
-    - [3) Ejecutar el script termuxtex.sh](#ejecutar-script-termuxtex)
-  - [Ejemplo ](#ejemplo)
-    - [1) Dirigirse a la carpeta ejemplo ](#carpeta-ejemplo)
-    - [Comando 1) lualatex2ca (recomendado)](#lualatex2ca)
-    - [Comando 2) lualatex2c](#lualatex2c)
-    - [Comando 3) pdflatex2ca ](#pdflatex2ca)
-    - [Comando 4) pdflatex2c](#pdflatex2c)
+  - [Release notes](#notas-de-version)
+  - [Pre-requisites](#pre-requisitos)
+    - [Write permissions activated](#escritura-activados)
+    - [Install Git](#instalar-git)
+      - [1) Install Git:](#instalamos-git)
+      - [2) Accept the installation of Git:](#aceptar-instalacion-git)
+      - [3) Wait until the installation finishes:](#esperar-git)
+  - [Installation](#instalacion)
+    - [1) Get TermuxTex](#obtener-termuxtex)
+    - [2) Open the termuxtex folder](#abrir-termuxtex)
+    - [3) Run the termuxtex.sh script](#ejecutar-script-termuxtex)
+  - [Example](#ejemplo)
+    - [1) Go to the example folder](#carpeta-ejemplo)
+    - [Command 1) lualatex2ca (recommended)](#lualatex2ca)
+    - [Command 2) lualatex2c](#lualatex2c)
+    - [Command 3) pdflatex2ca](#pdflatex2ca)
+    - [Command 4) pdflatex2c](#pdflatex2c)
     
 	
 ## Release notes
@@ -42,7 +42,7 @@ Have the Termux write permissions enabled (Settings => Apps => Termux => Permiss
 <img src="images/permisos_2.jpg" width="25%" alt="Activar permisos en Termux">
 <img src="images/permisos_3.jpg" width="25%" alt="Activar permisos en Termux">
 
-### Installl Git
+### Install Git
 Install git in Termux:
 #### 1) Install Git:
 Execute the following command in termux: <br>
