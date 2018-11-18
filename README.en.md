@@ -103,7 +103,7 @@ cd ejemplo
 
 ### Command 1) lualatex2ca (recommended)
 This command automatically compiles and opens the PDF generated file. <br>
-You must first write lualatex2ca followed by the main file name in LaTeX <b> WITHOUT the .tex extension </ b> <br>
+You must first write lualatex2ca followed by the main file name in LaTeX <b> WITHOUT the .tex extension </b> <br>
 
 Example: <br>
 ````
@@ -121,7 +121,7 @@ Generated PDF (the PDF will be saved in the folder where it is being executed):
  
 ### Command 2) lualatex2c
 This command only compiles to a PDF file. <br>
-You must first write lualatex2c followed by the main file name in LaTeX <b> WITHOUT the .tex extension </ b> <br>
+You must first write lualatex2c followed by the main file name in LaTeX <b> WITHOUT the .tex extension </b> <br>
 Example: <br>
 ````
 lualatex2c tarea1
@@ -134,7 +134,7 @@ Wait for it to finish compiling ... <br>
 
 ### Command 3) pdflatex2ca
 This command automatically compiles and opens the PDF generated file. <br>
-You must first write pdflatex2ca followed by the main file name in LaTeX <b> WITHOUT the .tex extension </ b> <br>
+You must first write pdflatex2ca followed by the main file name in LaTeX <b> WITHOUT the .tex extension </b> <br>
 
 Example: <br>
 ````
@@ -153,7 +153,7 @@ Generated PDF (the PDF will be saved in the folder where it is being executed):
 
 ### Command 4) pdflatex2c
 This command only compiles to a PDF file. <br>
-First write pdflatex2c followed by the main file name in LaTeX <b> WITHOUT the extension .tex </ b> <br>
+First write pdflatex2c followed by the main file name in LaTeX <b> WITHOUT the extension .tex </b> <br>
 Example: <br>
 ````
 pdflatex2c tarea1
