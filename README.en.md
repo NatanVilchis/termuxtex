@@ -158,7 +158,8 @@ First write pdflatex2c followed by the main file name in LaTeX <b> WITHOUT the e
 Example: <br>
 ````
 pdflatex2c tarea1
-````<br>
+````
+<br>
 <img src="images/lualatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
 
 Wait for it to finish compiling ... <br>
