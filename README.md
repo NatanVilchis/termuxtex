@@ -13,7 +13,7 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
 ## Tabla de contenido
   - [Notas de la version](#notas-de-la-version)
   - [Pre-requisitos](#pre-requisitos)
-    - [Permisos de escritura activados](#escritura-activados)
+    - [Permisos de escritura activados](#permisos-de-escritura-activados)
     - [Instalar Git](#instalar-git)
       - [1) Instalar Git:](#instalamos-git)
       - [2) Aceptar la instalación de Git:](#aceptar-instalacion-git)
