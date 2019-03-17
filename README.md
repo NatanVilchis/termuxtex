@@ -1,4 +1,7 @@
-# [Termuxtex] (1.0.0) LaTeX para Termux 
+# [Termuxtex] (1.1.0) LaTeX para Termux
+Versión (1.1.0) - <b>Modificación: 16/MAR/2019</b><br>
+¡Ahora pdflatex2ca, pdflatex2c, lualatex2ca y lualatex2c instalan automáticamente los paquetes faltantes!<br>
+
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/natanvilchis) <br>
 
@@ -31,7 +34,13 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
     
 	
 ## Notas de la versión
-Versión (1.0.0) <b>Fecha de modificación: 18/NOV/2018</b><br>
+Versión (1.1.0) - <b>Fecha de Modificación: 16/MAR/2019</b><br>
+Se agregó la descarga del paquete <b>texliveonfly</b> en termuxtex.sh <br> 
+Se modificaron los archivos pdflatex2ca, pdflatex2c, lualatex2ca y lualatex2c para que automáticamente instalaran los paquetes faltantes del archivo a compilar (gracias al paquete texliveonfly). <br>
+Se añadió una corrección a los archivos pdflatex2ca, pdflatex2c, lualatex2ca y lualatex2c para que puedan compilar archivos que no usen referencias bibliográficas.<br>
+
+
+Versión (1.0.0) <b>Fecha de Modificación: 18/NOV/2018</b><br>
 Se añade la primer versión del repositorio
 
 ## Pre-requisitos
@@ -105,11 +114,11 @@ cd ejemplo
 
 ### Comando 1) lualatex2ca (recomendado)
 Este comando compila y abre automáticamente el archivo generado PDF.<br>
-Se debe escribir primero lualatex2ca seguido del nombre de archivo principal en LaTeX <b>SIN la extensión .tex</b><br>
+Se debe escribir primero lualatex2ca seguido del nombre de archivo principal en LaTeX <b>CON la extensión .tex</b><br>
 
 Ejemplo:<br>
 ````
-lualatex2ca tarea1
+lualatex2ca tarea1.tex
 ````
 <br>
 <img src="images/lualatex2ca_1.jpg" width="75%" alt="Ejemplo"> <br>
@@ -123,10 +132,10 @@ PDF generado (el PDF se guardará en la carpeta donde se está ejecutando):
  
 ### Comando 2) lualatex2c
 Este comando sólo compila a un archivo PDF.<br>
-Se debe escribir primero lualatex2c seguido del nombre de archivo principal en LaTeX <b>SIN la extensión .tex</b><br>
+Se debe escribir primero lualatex2c seguido del nombre de archivo principal en LaTeX <b>CON la extensión .tex</b><br>
 Ejemplo:<br>
 ````
-lualatex2c tarea1
+lualatex2c tarea1.tex
 ````
 <br>
 <img src="images/lualatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
@@ -136,11 +145,11 @@ Esperar a que termine de compilar... <br>
 
 ### Comando 3) pdflatex2ca 
 Este comando compila y abre automáticamente el archivo generado PDF.<br>
-Se debe escribir primero pdflatex2ca seguido del nombre de archivo principal en LaTeX <b>SIN la extensión .tex</b><br>
+Se debe escribir primero pdflatex2ca seguido del nombre de archivo principal en LaTeX <b>CON la extensión .tex</b><br>
 
 Ejemplo:<br>
 ````
-pdflatex2ca tarea1
+pdflatex2ca tarea1.tex
 ````
 <br>
 <img src="images/pdflatex2ca_1.jpg" width="75%" alt="Ejemplo"> <br>
@@ -155,10 +164,10 @@ PDF generado (el PDF se guardará en la carpeta donde se está ejecutando):
 
 ### Comando 4) pdflatex2c
 Este comando sólo compila a un archivo PDF.<br>
-Se debe escribir primero pdflatex2c seguido del nombre de archivo principal en LaTeX <b>SIN la extensión .tex</b><br>
+Se debe escribir primero pdflatex2c seguido del nombre de archivo principal en LaTeX <b>CON la extensión .tex</b><br>
 Ejemplo:<br>
 ````
-pdflatex2c tarea1
+pdflatex2c tarea1.tex
 ````
 <br>
 <img src="images/lualatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
