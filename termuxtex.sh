@@ -14,56 +14,8 @@ apt -y upgrade
 
 #instalamos coreutils y gnupg para utilidades del sistema: 
 apt -y install coreutils
-#Creamos una carpeta para contener un listado de paquetes interno:
-#mkdir $PREFIX/etc/apt/sources.list.d
-# Creamos el comando interna 
-#echo "cd /storage/emulated/0" > $PREFIX/etc/apt/sources.list.d/interna
-# Le asignamos permiso de ejecucion al comando 
-#chmod +x $PREFIX/etc/apt/sources.list.d/interna
 
-#if [ -f ".profile" ]
-#then
-#	echo "export PATH=$PATH:$PREFIX/etc/apt/sources.list.d/" >> .profile
-#else
-#	echo "export PATH=$PATH:$PREFIX/etc/apt/sources.list.d/" > .profile
-#fi
-
-#echo echo 'pdflatex $1 &&
-#lualatex $1 && 
-#makeindex $1.tex && 
-#bibtex $1 && 
-#lualatex $1 && 
-#lualatex $1'  > $PREFIX/etc/apt/sources.list.d/lualatex2c
-## Le asignamos permiso de ejecucion al comando 
-#chmod +x $PREFIX/etc/apt/sources.list.d/lualatex2c
-
-
-#echo 'pdflatex $1 && 
-#makeindex $1.tex && 
-#bibtex $1 && 
-#pdflatex $1 && 
-#pdflatex $1'  > $PREFIX/etc/apt/sources.list.d/pdflatex2c
-# Le asignamos permiso de ejecucion al comando 
-#chmod +x $PREFIX/etc/apt/sources.list.d/pdflatex2c
-
-
-#echo echo 'pdflatex $1 &&
-#lualatex $1 && 
-#makeindex $1.tex && 
-#bibtex $1 && 
-#lualatex $1 && 
-#lualatex $1 &&
-#termux-open $1.pdf'  > $PREFIX/etc/apt/sources.list.d/lualatex2ca
-# Le asignamos permiso de ejecucion al comando 
-#chmod +x $PREFIX/etc/apt/sources.list.d/lualatex2ca
-#echo 'pdflatex $1 && 
-#makeindex $1.tex && 
-#bibtex $1 && 
-#pdflatex $1 && 
-#pdflatex $1 &&
-#termux-open $1.pdf'  > $PREFIX/etc/apt/sources.list.d/pdflatex2ca
-# Le asignamos permiso de ejecucion al comando
-#chmod +x $PREFIX/etc/apt/sources.list.d/pdflatex2ca
+ 
 #instalamos los archivos necesarios
 apt -y install texlive
 tlmgr install fontspec hyperref amssymb graphicx apacite enumerate commath amsmath booktabs adjustbox babel babel-spanish  inputenc pythonhighlight listings
