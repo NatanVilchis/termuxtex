@@ -1,3 +1,4 @@
+texliveonfly $1
 pdflatex $1 
 makeindex $1.tex 
 bibtex $1 
