@@ -1,8 +1,8 @@
 texliveonfly $1
 pdflatex $1
 lualatex $1  
-makeindex $1.tex  
-bibtex $1 
+makeindex $1
+bibtex $(basename $1 .tex) 
 lualatex $1  
 lualatex $1 
 termux-open $1.pdf
