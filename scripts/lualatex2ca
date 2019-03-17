@@ -5,4 +5,4 @@ makeindex $1
 bibtex $(basename $1 .tex) 
 lualatex $1  
 lualatex $1 
-termux-open $1.pdf
+termux-open $(basename $1 .tex).pdf
