@@ -1,7 +1,7 @@
-pdflatex $1 &&
-lualatex $1 && 
-makeindex $1.tex && 
-bibtex $1 && 
-lualatex $1 && 
-lualatex $1 &&
+pdflatex $1
+lualatex $1  
+makeindex $1.tex  
+bibtex $1 
+lualatex $1  
+lualatex $1 
 termux-open $1.pdf
