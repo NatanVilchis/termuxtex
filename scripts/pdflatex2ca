@@ -1,6 +1,6 @@
-pdflatex $1 && 
-makeindex $1.tex && 
-bibtex $1 && 
-pdflatex $1 && 
-pdflatex $1 &&
+pdflatex $1
+makeindex $1.tex 
+bibtex $1 
+pdflatex $1 
+pdflatex $1 
 termux-open $1.pdf
