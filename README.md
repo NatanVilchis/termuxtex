@@ -170,7 +170,7 @@ Ejemplo:<br>
 pdflatex2c tarea1.tex
 ````
 <br>
-<img src="images/lualatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
+<img src="images/pdflatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
 
 Esperar a que termine de compilar... <br>
 <img src="images/lualatex2c_2.jpg" width="75%" alt="Ejemplo"> <br>
