@@ -1,4 +1,6 @@
-# [Termuxtex] (1.0.0) LaTeX for Termux 
+# [Termuxtex] (1.1.0) LaTeX for Termux 
+Version (1.1.0) - <b> Modification date: 16/MAR/2019 </b> <br>
+Now pdflatex2ca, pdflatex2c, lualatex2ca and lualatex2c automatically install the missing packages! <br>
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/natanvilchis) <br>
 
@@ -30,7 +32,12 @@ An automated script to install LaTeX and its main libraries for Termux <br>
     
 	
 ## Release notes
-Version (1.0.0) <b> Date modified: 18/NOV/2018 </b> <br>
+Version (1.1.0) - <b>Modification date: 16/MAR/2019</b><br>
+Added the download of the <b> texliveonfly </b> package to termuxtex.sh <br>
+The pdflatex2ca, pdflatex2c, lualatex2ca and lualatex2c files were modified so that they automatically installed the missing packages from the file to be compiled (thanks to the texliveonfly package). <br>
+A correction was added to the files pdflatex2ca, pdflatex2c, lualatex2ca and lualatex2c so that they can compile files that do not use bibliographic references. <br>
+
+Version (1.0.0) <b> Modification date: 18/NOV/2018 </b> <br>
 The first version of the repository is added
 
 ## Pre-requirements
@@ -159,7 +166,7 @@ Example: <br>
 pdflatex2c tarea1
 ````
 <br>
-<img src="images/lualatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
+<img src="images/pdflatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
 
 Wait for it to finish compiling ... <br>
 <img src="images/lualatex2c_2.jpg" width="75%" alt="Ejemplo"> <br>
