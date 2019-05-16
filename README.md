@@ -28,7 +28,7 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
     - [1) Obtener TermuxTex](#1-Obtener-TermuxTex)
     - [2) Abrir la carpeta termuxtex](#2-Abrir-la-carpeta-termuxtex)
     - [3) Instalación limpia](#3-Instalación-limpia)
-    - [4) Ejecutar el script termuxtex](#3-Ejecutar-el-script-termuxtex)
+    - [4) Ejecutar el script termuxtex](#4-Ejecutar-el-script-termuxtex)
   - [Scripts](#Scripts)    
     - [lualatex2](#lualatex2)
     - [pdflatex2](#pdflatex2)
@@ -103,7 +103,7 @@ rm -rf $HOME/.texlive*
 
  
 
-### 3) Ejecutar el script termuxtex
+### 4) Ejecutar el script termuxtex
 En Termux ejecutar el siguiente comando:
 ````
 bash termuxtex.sh
@@ -176,9 +176,8 @@ pdflatex2 -ba archivo.tex
 ````
 
 
-### 1) Dirigirse a la carpeta ejemplo
-Para cada uno de los siguientes 4 comandos se ejecutó dentro de la carpeta de ejemplo. <br>
-Escribir en termux el siguiente comando: <br>
+## Ejemplo
+Este repositorio cuenta con un archivo .tex de ejemplo. Dentro de la carpeta termuxtex escribir lo siguiente: <br>
 ````
 cd ejemplo
 ````
