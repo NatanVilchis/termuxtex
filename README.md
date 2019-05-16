@@ -96,7 +96,7 @@ Se recomienda realizar una instalación limpia si actualmente está instalado te
 Los siguientes comandos purgarán la instalación vieja y eliminarán los archivos de configuración viejos. <br>
 Para realizar la instalación limpia en Termux se debe escribir lo siguiente:
 ````
-apt-get -Y purge texlive*
+apt-get -y purge texlive*
 rm -rf $HOME/../usr/share/texlive/
 rm -rf $HOME/.texlive*
 ````
