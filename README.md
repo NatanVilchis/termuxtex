@@ -1,6 +1,6 @@
 # [Termuxtex] (1.2.0) LaTeX para Termux
 Versión (1.2.0) - <b>Modificación: 16/MAY/2019</b><br>
-Cambios en los scripts: [Scripts](#Scripts)<br> 
+Cambios en los scripts lualatex2ca, pdflatex2ca, pdflatex2c y pdflatex2ca: [Scripts](#Scripts)<br> 
 
 
 En caso de que al compilar el archivo .tex muestre error sobre algún paquete no encontrado pero ya se ha instalado el paquete es necesario realizar una instalación limpia: [Ver instalación limpia](#3-Instalación-limpia)
