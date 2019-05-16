@@ -1,6 +1,7 @@
 # [Termuxtex] (1.1.1) LaTeX para Termux
-Versión (1.1.1) - <b>Modificación: 15/MAY/2019</b><br>
-¡Ahora pdflatex2ca, pdflatex2c, lualatex2ca y lualatex2c instalan automáticamente los paquetes faltantes!<br>
+Versión (1.2.0) - <b>Modificación: 16/MAY/2019</b><br>
+Cambios en los scripts: pdflatex2ca, pdflatex2c, lualatex2ca, lualatex2c: []<br> 
+
 
 En caso de que al compilar el archivo .tex muestre error sobre algún paquete no encontrado pero ya se ha instalado el paquete es necesario realizar una instalación limpia: [Ver instalación limpia](#3-Instalación-limpia)
 
@@ -28,12 +29,12 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
     - [2) Abrir la carpeta termuxtex](#2-Abrir-la-carpeta-termuxtex)
     - [3) Instalación limpia](#3-Instalación-limpia)
     - [4) Ejecutar el script termuxtex](#3-Ejecutar-el-script-termuxtex)
+  - [Scripts](#Scripts)    
   - [Ejemplo ](#ejemplo)
     - [1) Dirigirse a la carpeta ejemplo ](#1-Dirigirse-a-la-carpeta-ejemplo)
-    - [Comando 1) lualatex2ca (recomendado)](#Comando-1-lualatex2ca-recomendado)
-    - [Comando 2) lualatex2c](#Comando-2-lualatex2c)
-    - [Comando 3) pdflatex2ca ](#Comando-3-pdflatex2ca)
-    - [Comando 4) pdflatex2c](#Comando-4-pdflatex2c)
+    - [Cambios en los scripts](#cambios-en-los-scripts)
+    - [Comando 1) lualatex2)](#Comando-1-lualatex2)
+    - [Comando 2) pdflatex2)](#Comando-3-pdflatex2)
     
 	
 ## Notas de la versión
@@ -110,11 +111,68 @@ bash termuxtex.sh
 Esperar a que termine la instalación:
 <img src="images/termuxtex_5.jpg" width="75%" alt="Instalación de TermuxPy"> <br>
 
+## Scripts
+Para simplificar los scripts se han hecho los siguientes cambios:<br>
+lualatex2ca y lualatex2c estarán integrados en solo script llamado "lualatex2" <br>
+ppdflatex2ca y pdflatex2c estarán integrados en solo script llamado "pdflatex2" <br>
+ 
 
+### Comando 1) lualatex2
+Este comando compilará el archivo con lualatex<br>
+La forma general de uso es la siguiente:
+````
+lualatex2 [-opciones] archivo.tex
+````
+Opciones:<br>
+-b, Si el archivo.tex contiene referencias como bibtex, apacite...<br>
+-a, Si desea abrir el archivo PDF automáticamente después de la compilación.<br>
+Si no hay opciones solamente se compilará el archivo en PDF.<br>
+Ejemplos de uso:
+Compilar solamente:  
+````
+lualatex2 archivo.tex
+````
+Compilar y abrir automáticamente:  
+````
+lualatex2 -a archivo.tex
+````
+Compilar, generar las referencias y abrir automáticamente:  
+````
+lualatex2 -ab archivo.tex
+````
+También puede usarse:
+````
+lualatex2 -ba archivo.tex
+````
 
+### Comando 2) pdflatex2
+Este comando compilará el archivo con pdflatex<br>
+La forma general de uso es la siguiente:
+````
+pdflatex2 [-opciones] archivo.tex
+````
+Opciones:<br>
+-b, Si el archivo.tex contiene referencias como bibtex, apacite...<br>
+-a, Si desea abrir el archivo PDF automáticamente después de la compilación.<br>
+Si no hay opciones solamente se compilará el archivo en PDF.<br>
+Ejemplos de uso:
+Compilar solamente:  
+````
+pdflatex2 archivo.tex
+````
+Compilar y abrir automáticamente:  
+````
+pdflatex2 -a archivo.tex
+````
+Compilar, generar las referencias y abrir automáticamente:  
+````
+pdflatex2 -ab archivo.tex
+````
+También puede usarse:
+````
+pdflatex2 -ba archivo.tex
+````
 
-## Ejemplo
-Este repositorio cuenta con un ejemplo para poder crear un documento PDF a partir de una archivo en LaTeX<br>
 
 ### 1) Dirigirse a la carpeta ejemplo
 Para cada uno de los siguientes 4 comandos se ejecutó dentro de la carpeta de ejemplo. <br>
@@ -123,79 +181,17 @@ Escribir en termux el siguiente comando: <br>
 cd ejemplo
 ````
 <br>
-
 <img src="images/ejemplo_1.jpg" width="75%" alt="Ejemplo"> <br><br>
 
-<b>Existen 4 comandos pre-instalados junto termuxtex, los cuales automatizan la compilación del archivo en LaTeX</b><br>
-
-### Comando 1) lualatex2ca (recomendado)
-Este comando compila y abre automáticamente el archivo generado PDF.<br>
-Se debe escribir primero lualatex2ca seguido del nombre de archivo principal en LaTeX <b>CON la extensión .tex</b><br>
-
-Ejemplo:<br>
+Como el ejemplo tiene referencias bibliográficas se puede usar lo siguiente:<br>
 ````
-lualatex2ca tarea1.tex
+pdflatex2 -ba archivo.tex
 ````
-<br>
-<img src="images/lualatex2ca_1.jpg" width="75%" alt="Ejemplo"> <br>
-
-
-Esperar a que termine de compilar... <br>
-<img src="images/lualatex2ca_2.jpg" width="75%" alt="Ejemplo"> <br>
-PDF generado (el PDF se guardará en la carpeta donde se está ejecutando):
- 
-<img src="images/lualatex2ca_3.jpg" width="75%" alt="Ejemplo"> <br>
- 
-### Comando 2) lualatex2c
-Este comando sólo compila a un archivo PDF.<br>
-Se debe escribir primero lualatex2c seguido del nombre de archivo principal en LaTeX <b>CON la extensión .tex</b><br>
-Ejemplo:<br>
+También puede compilarse usando lualatex2:
 ````
-lualatex2c tarea1.tex
+lualatex2 -ba archivo.tex
 ````
-<br>
-<img src="images/lualatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
-
-Esperar a que termine de compilar... <br>
-<img src="images/lualatex2c_2.jpg" width="75%" alt="Ejemplo"> <br>
-
-### Comando 3) pdflatex2ca 
-Este comando compila y abre automáticamente el archivo generado PDF.<br>
-Se debe escribir primero pdflatex2ca seguido del nombre de archivo principal en LaTeX <b>CON la extensión .tex</b><br>
-
-Ejemplo:<br>
-````
-pdflatex2ca tarea1.tex
-````
-<br>
-<img src="images/pdflatex2ca_1.jpg" width="75%" alt="Ejemplo"> <br>
-
-
-Esperar a que termine de compilar... <br>
-<img src="images/lualatex2ca_2.jpg" width="75%" alt="Ejemplo"> <br>
-PDF generado (el PDF se guardará en la carpeta donde se está ejecutando):
- 
-<img src="images/lualatex2ca_3.jpg" width="75%" alt="Ejemplo"> <br>
-
-
-### Comando 4) pdflatex2c
-Este comando sólo compila a un archivo PDF.<br>
-Se debe escribir primero pdflatex2c seguido del nombre de archivo principal en LaTeX <b>CON la extensión .tex</b><br>
-Ejemplo:<br>
-````
-pdflatex2c tarea1.tex
-````
-<br>
-<img src="images/pdflatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
-
-Esperar a que termine de compilar... <br>
-<img src="images/lualatex2c_2.jpg" width="75%" alt="Ejemplo"> <br>
-
-
-
-
-
-
+Para ver la lista de opciones que pueden pasarse a lualatex2 y pdflatex2 ver [Scripts](Scripts)
 
 ## Hecho por 
 [Natan Vilchis](https://natanvilchis.org) <br>
