@@ -192,7 +192,7 @@ También puede compilarse usando lualatex2:
 ````
 lualatex2 -ba archivo.tex
 ````
-Para ver la lista de opciones que pueden pasarse a lualatex2 y pdflatex2 ver [Scripts](Scripts)
+Para ver la lista de opciones que pueden pasarse a lualatex2 y pdflatex2 ver: [Scripts](#Scripts)
 
 ## Hecho por 
 [Natan Vilchis](https://natanvilchis.org) <br>
