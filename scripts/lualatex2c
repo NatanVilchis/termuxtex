@@ -6,13 +6,13 @@ function error(){
   exit 1
 }
 function ayuda(){
-  echo2 "pdflatex2c"
+  echo2 "lualatex2c"
   echo2 "Script para compilar a PDF un archivo .tex"
   echo2 "Existen dos opciones de uso:"
   echo2 "==> Opción 1: Si el archivo .tex no tiene referencias bibliográficas como bibtex usar:"
-  echo2 "pdflatex2c archivo.tex"
+  echo2 "lualatex2c archivo.tex"
   echo2 "==> Opción 2: Si el archivo .tex sí tiene referencias bibliográficas como bibtex usar:"
-  echo2 "pdflatex2c -b archivo.tex"  
+  echo2 "lualatex2c -b archivo.tex"  
 }
 if [[ "$#" == 0 || "$#" > 2 ]]; then
   ayuda
