@@ -30,7 +30,9 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
     - [3) Instalación limpia](#3-Instalación-limpia)
     - [4) Ejecutar el script termuxtex](#3-Ejecutar-el-script-termuxtex)
   - [Scripts](#Scripts)    
-  - [Ejemplo ](#ejemplo)
+    - [lualatex2](#lualatex2)
+    - [pdflatex2](#pdflatex2)
+  - [Ejemplo](#ejemplo)
     - [1) Dirigirse a la carpeta ejemplo ](#1-Dirigirse-a-la-carpeta-ejemplo)
     - [Cambios en los scripts](#cambios-en-los-scripts)
     - [Comando 1) lualatex2)](#Comando-1-lualatex2)
@@ -117,8 +119,8 @@ lualatex2ca y lualatex2c estarán integrados en "lualatex2" <br>
 ppdflatex2ca y pdflatex2c estarán integrados en "pdflatex2" <br>
  
 
-### Comando 1) lualatex2
-Este comando compilará el archivo con lualatex<br>
+### lualatex2
+Este comando compilará el archivo .tex con lualatex<br>
 La forma general de uso es la siguiente:
 ````
 lualatex2 [-opciones] archivo.tex
@@ -145,8 +147,8 @@ También puede usarse:
 lualatex2 -ba archivo.tex
 ````
 
-### Comando 2) pdflatex2
-Este comando compilará el archivo con pdflatex<br>
+### pdflatex2
+Este comando compilará el archivo .tex con pdflatex<br>
 La forma general de uso es la siguiente:
 ````
 pdflatex2 [-opciones] archivo.tex
