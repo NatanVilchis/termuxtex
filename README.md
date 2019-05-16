@@ -113,8 +113,8 @@ Esperar a que termine la instalación:
 
 ## Scripts
 Para simplificar los scripts se han hecho los siguientes cambios:<br>
-lualatex2ca y lualatex2c estarán integrados en solo script llamado "lualatex2" <br>
-ppdflatex2ca y pdflatex2c estarán integrados en solo script llamado "pdflatex2" <br>
+lualatex2ca y lualatex2c estarán integrados en "lualatex2" <br>
+ppdflatex2ca y pdflatex2c estarán integrados en "pdflatex2" <br>
  
 
 ### Comando 1) lualatex2
@@ -127,7 +127,7 @@ Opciones:<br>
 -b, Si el archivo.tex contiene referencias como bibtex, apacite...<br>
 -a, Si desea abrir el archivo PDF automáticamente después de la compilación.<br>
 Si no hay opciones solamente se compilará el archivo en PDF.<br>
-Ejemplos de uso:
+Ejemplos de uso:<br>
 Compilar solamente:  
 ````
 lualatex2 archivo.tex
@@ -155,7 +155,7 @@ Opciones:<br>
 -b, Si el archivo.tex contiene referencias como bibtex, apacite...<br>
 -a, Si desea abrir el archivo PDF automáticamente después de la compilación.<br>
 Si no hay opciones solamente se compilará el archivo en PDF.<br>
-Ejemplos de uso:
+Ejemplos de uso:<br>
 Compilar solamente:  
 ````
 pdflatex2 archivo.tex
