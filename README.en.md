@@ -115,7 +115,6 @@ To simplify the scripts the following changes have been made: <br>
 lualatex2ca and lualatex2c will be integrated in "lualatex2" <br>
 pdflatex2ca and pdflatex2c will be integrated in "pdflatex2" <br>
  
-
 ### lualatex2
 This command will compile the .tex file with lualatex <br>
 The general form of lualatex2:
