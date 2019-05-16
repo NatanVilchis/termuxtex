@@ -1,6 +1,8 @@
-# [Termuxtex] (1.1.0) LaTeX para Termux
-Versión (1.1.0) - <b>Modificación: 16/MAR/2019</b><br>
+# [Termuxtex] (1.1.1) LaTeX para Termux
+Versión (1.1.1) - <b>Modificación: 15/MAY/2019</b><br>
 ¡Ahora pdflatex2ca, pdflatex2c, lualatex2ca y lualatex2c instalan automáticamente los paquetes faltantes!<br>
+
+En caso de que al compilar el archivo .tex muestre error sobre algún paquete no encontrado pero ya se ha instalado el paquete es necesario realizar una instalación limpia: (#3-Instalación-limpia)
 
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/natanvilchis) <br>
@@ -24,7 +26,8 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
   - [Instalación](#instalación)
     - [1) Obtener TermuxTex](#1-Obtener-TermuxTex)
     - [2) Abrir la carpeta termuxtex](#2-Abrir-la-carpeta-termuxtex)
-    - [3) Ejecutar el script termuxtex](#3-Ejecutar-el-script-termuxtex)
+    - [3) Instalación limpia](#3-Instalación-limpia)
+    - [4) Ejecutar el script termuxtex](#3-Ejecutar-el-script-termuxtex)
   - [Ejemplo ](#ejemplo)
     - [1) Dirigirse a la carpeta ejemplo ](#1-Dirigirse-a-la-carpeta-ejemplo)
     - [Comando 1) lualatex2ca (recomendado)](#Comando-1-lualatex2ca-recomendado)
@@ -83,6 +86,17 @@ En Termux ejecutar el siguiente comando:
 cd termuxtex
 ````
 <img src="images/termuxtex_3.jpg" width="75%" alt="Instalación de TermuxPy"> <br>
+
+### 3) Instalación limpia (opcional)
+Se recomienda realizar una instalación limpia si ya se ha instalado termuxtex en el dispositivo que se está ejecutando este script, esto con la finalidad de evitar posibles errores como el siguiente [Latex can't find .sty files altough packages are installed](https://tex.stackexchange.com/questions/158700/latex-cant-find-sty-files-altough-packages-are-installed-texlive-ubuntu-12). <br>
+Para realizar la instalación limpira en Termux se debe escribir lo siguiente:
+````
+apt-get -Y purge texlive*
+rm -rf $HOME/../usr/share/texlive/
+rm -rf $HOME/.texlive*
+````
+Los comandos anteriores purgarán la instalación vieja y eliminarán los archivos de configuración viejos.<br>
+ 
 
 ### 3) Ejecutar el script termuxtex
 En Termux ejecutar el siguiente comando:
