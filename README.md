@@ -2,7 +2,7 @@
 Versión (1.1.1) - <b>Modificación: 15/MAY/2019</b><br>
 ¡Ahora pdflatex2ca, pdflatex2c, lualatex2ca y lualatex2c instalan automáticamente los paquetes faltantes!<br>
 
-En caso de que al compilar el archivo .tex muestre error sobre algún paquete no encontrado pero ya se ha instalado el paquete es necesario realizar una instalación limpia: (#3-Instalación-limpia)
+En caso de que al compilar el archivo .tex muestre error sobre algún paquete no encontrado pero ya se ha instalado el paquete es necesario realizar una instalación limpia: [Ver instalación limpia](#3-Instalación-limpia)
 
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/natanvilchis) <br>
