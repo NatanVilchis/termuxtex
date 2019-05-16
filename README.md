@@ -40,6 +40,13 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
     
 	
 ## Notas de la versión
+Versión (1.2.0) - <b>Fecha de Modificación: 16/MAY/2019</b><br>
+Los scripts pdflatex2ca y pdflatex2c se integraron en uno solo llamado: pdflatex2.<br>
+Los scripts lualatex2ca y lualatex2c se integraron en uno solo llamado: lualatex2. <br>
+Se eliminó "inputenc" de los paquetes por defecto en la instalación de termuxtex.<br>
+Se agrega la opción para realizar una instalación limpia en dispositivos que ya tienen instalado termuxtex en el dispositivo.
+
+
 Versión (1.1.0) - <b>Fecha de Modificación: 16/MAR/2019</b><br>
 Se agregó la descarga del paquete <b>texliveonfly</b> en termuxtex.sh <br> 
 Se modificaron los archivos pdflatex2ca, pdflatex2c, lualatex2ca y lualatex2c para que automáticamente instalaran los paquetes faltantes del archivo a compilar (gracias al paquete texliveonfly). <br>
@@ -92,16 +99,14 @@ cd termuxtex
 
 ### 3) Instalación limpia
 Si no ha instalado termuxtex en este dispositivo omita este paso. <br>
-Se recomienda realizar una instalación limpia si actualmente está instalado termuxtex en Termux, esto con la finalidad de evitar posibles errores como el siguiente: [Latex can't find .sty files altough packages are installed](https://tex.stackexchange.com/questions/158700/latex-cant-find-sty-files-altough-packages-are-installed-texlive-ubuntu-12). <br>
-Los siguientes comandos purgarán la instalación vieja y eliminarán los archivos de configuración viejos. <br>
-Para realizar la instalación limpia en Termux se debe escribir lo siguiente:
+Se recomienda realizar una instalación limpia si actualmente ya está instalado termuxtex en Termux, esto con la finalidad de evitar posibles errores como el siguiente: [Latex can't find .sty files altough packages are installed](https://tex.stackexchange.com/questions/158700/latex-cant-find-sty-files-altough-packages-are-installed-texlive-ubuntu-12). <br>
+Los siguientes comandos purgarán la instalación vieja de LaTeX y eliminarán los archivos de configuración viejos. <br>
+Para realizar la instalación limpia se debe escribir lo siguiente en Termux:
 ````
 apt-get -y purge texlive*
 rm -rf $HOME/../usr/share/texlive/
 rm -rf $HOME/.texlive*
 ````
-
- 
 
 ### 4) Ejecutar el script termuxtex
 En Termux ejecutar el siguiente comando:
