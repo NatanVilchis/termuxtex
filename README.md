@@ -188,12 +188,18 @@ Como el ejemplo tiene referencias bibliográficas se puede usar lo siguiente:<br
 ````
 pdflatex2 -ba tarea1.tex
 ````
-
+<img src="images/pdflatex2_1.jpg" width="75%" alt="pdflatex_1"> <br><br>
+Esperar a que termine de compilar:<br>
+<img src="images/pdflatex2_2.jpg" width="75%" alt="pdflatex_2"> <br>
 
 También puede compilarse usando lualatex2:
 ````
 lualatex2 -ba tarea1.tex
 ````
+
+Una vez compilado el archivo se abrirá automáticamente :<br>
+<img src="images/ejemplo_pdf.jpg" width="75%" alt="pdflatex_2"> <br>
+
 Para ver la lista de opciones que pueden pasarse a lualatex2 y pdflatex2 ver: [Scripts](#Scripts)
 
 ## Hecho por 
