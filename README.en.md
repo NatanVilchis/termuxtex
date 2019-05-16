@@ -153,6 +153,7 @@ pdflatex2 [-options] archivo.tex
 Options: <br>
 -b, If the .tex file contains references like bibtex, apacite ... <br>
 -o, If you want to open the PDF file automatically after compilation. <br>
+-a, If you want to open the PDF file automatically after compilation (Same that -o). <br>
 If there are no options, only the PDF file will be compiled. <br>
 Examples: <br>
 Compile:
@@ -183,7 +184,7 @@ cd example
 
 Since the example has bibliographic references, the following can be used: <br>
 ````
-pdflatex2 -bo tarea1.tex
+pdflatex2 -ba tarea1.tex
 ````
 <img src = "images/pdflatex2_1.jpg" width = "75%" alt = "pdflatex_1"> <br> <br>
 Wait for it to finish compiling: <br>
@@ -191,7 +192,7 @@ Wait for it to finish compiling: <br>
 
 It can also be compiled using lualatex2:
 ````
-lualatex2 -bo tarea1.tex
+lualatex2 -ba tarea1.tex
 ````
 
 Once compiled the file will be open automatically: <br>
