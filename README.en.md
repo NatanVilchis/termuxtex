@@ -2,7 +2,7 @@
 Version (1.2.0) - <b> Modification date: 16/MAY/2019 </b> <br>
 Changes in lualatex2ca, pdflatex2ca, pdflatex2c and pdflatex2ca scripts: [Scripts](#Scripts)<br>
 
-In case that when compiling the .tex file shows error about some package not found but the package has already been installed it's necessary to perform a clean installation: [See clean installation](#3-Clean-installation)
+In devices that already have termuxtex it's recommended to make a clean installation: [See clean installation](#3-Clean-installation)
 
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/natanvilchis) <br>
@@ -90,10 +90,10 @@ cd termuxtex
 
 
 ### 3) Clean installation
-Si no ha instalado termuxtex en este dispositivo omita este paso. <br>
+If you have not installed termuxtex on this device, skip this step.<br>
 It's recommended to perform a clean installation if termuxtex is currently installed in Termux, in order to avoid possible errors such as the following: [Latex can't find .sty files altough packages are installed](https://tex.stackexchange.com/questions/158700/latex-cant-find-sty-files-altough-packages-are-installed-texlive-ubuntu-12). <br>
-The following commands will purge the old LaTeX installation and remove the old configuration files. <br>
-To perform the clean installation you must write the following in Termux:
+The next commands will purge the old LaTeX installation and remove the old configuration files. <br>
+To perform the clean installation you must write in Termux:
 ````
 apt-get -y purge texlive*
 rm -rf $HOME/../usr/share/texlive/
@@ -101,7 +101,7 @@ rm -rf $HOME/.texlive*
 ````
 
 ### 4) Run the termuxtex script
-In Termux execute the following command:
+In Termux execute the next command:
 ````
 bash termuxtex.sh
 ````
@@ -118,7 +118,7 @@ pdflatex2ca and pdflatex2c will be integrated in "pdflatex2" <br>
 
 ### lualatex2
 This command will compile the .tex file with lualatex <br>
-The general form of use is the following:
+The general form of lualatex2:
 ````
 lualatex2 [-options] file.tex
 ````
@@ -147,7 +147,7 @@ lualatex2 -bo file.tex
 
 ### pdflatex2
 This command will compile the .tex file with pdflatex <br>
-The general form of use is the following:
+The general form of pdflatex2:
 ````
 pdflatex2 [-options] archivo.tex
 ````
@@ -176,7 +176,7 @@ pdflatex2 -bo file.tex
 
 ## Example
 This repository has an example to use with termuxtex. <br>
-Inside the termuxtex folder write the following: <br>
+Inside the termuxtex folder write: <br>
 ````
 cd example
 ````
