@@ -94,7 +94,7 @@ cd termuxtex
 <img src="images/termuxtex_3.jpg" width="75%" alt="Instalación de TermuxPy"> <br>
 
 ### 3) Instalación limpia
-If you have not installed termuxtex on this device, skip this step. <br>
+Si no ha instalado termuxtex en este dispositivo, omita este paso. <br>
 Se recomienda realizar una instalación limpia si actualmente ya está instalado termuxtex en Termux, esto con la finalidad de evitar posibles errores como el siguiente: [Latex can't find .sty files altough packages are installed](https://tex.stackexchange.com/questions/158700/latex-cant-find-sty-files-altough-packages-are-installed-texlive-ubuntu-12). <br>
 Los siguientes comandos purgarán la instalación vieja de LaTeX y eliminarán los archivos de configuración viejos. <br>
 Para realizar la instalación limpia se debe escribir lo siguiente en Termux:
