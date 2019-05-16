@@ -2,7 +2,7 @@
 Version (1.2.0) - <b> Modification date: 16/MAY/2019 </b> <br>
 Changes in lualatex2ca, pdflatex2ca, pdflatex2c and pdflatex2ca scripts: [Scripts](#Scripts)<br>
 
-In case that when compiling the .tex file shows error about some package not found but the package has already been installed it's necessary to perform a clean installation: [See clean installation] (#3-Clean-installation)
+In case that when compiling the .tex file shows error about some package not found but the package has already been installed it's necessary to perform a clean installation: [See clean installation](#3-Clean-installation)
 
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/natanvilchis) <br>
@@ -182,9 +182,9 @@ cd example
 <img src = "images/ejemplo_1.jpg" width = "75%" alt = "Example"> <br> <br>
 
 Since the example has bibliographic references, the following can be used: <br>
-`` ``
+````
 pdflatex2 -bo tarea1.tex
-`` ``
+````
 <img src = "images/pdflatex2_1.jpg" width = "75%" alt = "pdflatex_1"> <br> <br>
 Wait for it to finish compiling: <br>
 <img src = "images/pdflatex2_2.jpg" width = "75%" alt = "pdflatex_2"> <br>
