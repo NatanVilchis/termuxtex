@@ -18,8 +18,7 @@ apt -y install coreutils
  
 #instalamos los archivos necesarios
 apt -y install texlive
-tlmgr install fontspec hyperref amssymb graphicx apacite enumerate commath amsmath booktabs adjustbox babel babel-spanish  inputenc pythonhighlight listings
-tlmgr install xkeyval collectbox pgfplots lm xcolor pgf texliveonfly
+tlmgr install fontspec hyperref amssymb graphicx apacite enumerate commath amsmath booktabs adjustbox babel babel-spanish  inputenc pythonhighlight listings xkeyval collectbox pgfplots lm xcolor pgf texliveonfly
 
 mv scripts/lualatex2c $HOME/../usr/bin
 chmod +x $HOME/../usr/bin/lualatex2c
