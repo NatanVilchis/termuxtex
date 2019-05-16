@@ -1,6 +1,9 @@
-# [Termuxtex] (1.1.0) LaTeX for Termux 
-Version (1.1.0) - <b> Modification date: 16/MAR/2019 </b> <br>
-Now pdflatex2ca, pdflatex2c, lualatex2ca and lualatex2c automatically install the missing packages! <br>
+# [Termuxtex] (1.2.0) LaTeX for Termux 
+Version (1.2.0) - <b> Modification date: 16/MAY/2019 </b> <br>
+Changes in lualatex2ca, pdflatex2ca, pdflatex2c and pdflatex2ca scripts: [Scripts](#Scripts)<br>
+
+In case that when compiling the .tex file shows error about some package not found but the package has already been installed it's necessary to perform a clean installation: [See clean installation] (#3-Clean-installation)
+
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/natanvilchis) <br>
 
@@ -22,16 +25,21 @@ An automated script to install LaTeX and its main libraries for Termux <br>
   - [Installation](#Installation)
     - [1) Get TermuxTex](#1-Get-TermuxTex)
     - [2) Open the termuxtex folder](#2-Open-the-termuxtex-folder)
-    - [3) Run the termuxtex.sh script](#3-Run-the-termuxtex-script)
+    - [3) Clean installation](#3-Clean-installation)
+    - [4) Run the termuxtex.sh script](43-Run-the-termuxtex-script)
+  - [Scripts](#Scripts)    
+    - [lualatex2](#lualatex2)
+    - [pdflatex2](#pdflatex2)
   - [Example](#Example)
-    - [1) Go to the example folder](#1-Go-to-the-example-folder)
-    - [Command 1) lualatex2ca (recommended)](#Command-1-lualatex2ca-recommended)
-    - [Command 2) lualatex2c](#Command-2-lualatex2c)
-    - [Command 3) pdflatex2ca](#Command-3-pdflatex2ca)
-    - [Command 4) pdflatex2c](#Command-4-pdflatex2c)
     
 	
 ## Release notes
+Version (1.2.0) - <b> Modification Date: 16/MAY/2019 </b><br>
+pdflatex2ca and pdflatex2c scripts were integrated into single one called: pdflatex2. <br>
+lualatex2ca and lualatex2c scripts were integrated into a single one called: lualatex2. <br>
+"inputenc" was removed from the default packages in the termuxtex installation. <br>
+The option to perform a clean installation on devices that already have thermuxtex installed on the device is added.
+
 Version (1.1.0) - <b>Modification date: 16/MAR/2019</b><br>
 Added the download of the <b> texliveonfly </b> package to termuxtex.sh <br>
 The pdflatex2ca, pdflatex2c, lualatex2ca and lualatex2c files were modified so that they automatically installed the missing packages from the file to be compiled (thanks to the texliveonfly package). <br>
@@ -80,7 +88,19 @@ cd termuxtex
 ````
 <img src="images/termuxtex_3.jpg" width="75%" alt="Instalación de TermuxPy"> <br>
 
-### 3) Run the termuxtex script
+
+### 3) Clean installation
+Si no ha instalado termuxtex en este dispositivo omita este paso. <br>
+It's recommended to perform a clean installation if termuxtex is currently installed in Termux, in order to avoid possible errors such as the following: [Latex can't find .sty files altough packages are installed](https://tex.stackexchange.com/questions/158700/latex-cant-find-sty-files-altough-packages-are-installed-texlive-ubuntu-12). <br>
+The following commands will purge the old LaTeX installation and remove the old configuration files. <br>
+To perform the clean installation you must write the following in Termux:
+````
+apt-get -y purge texlive*
+rm -rf $HOME/../usr/share/texlive/
+rm -rf $HOME/.texlive*
+````
+
+### 4) Run the termuxtex script
 In Termux execute the following command:
 ````
 bash termuxtex.sh
@@ -90,86 +110,94 @@ bash termuxtex.sh
 Wait for the installation to finish:
 <img src="images/termuxtex_5.jpg" width="75%" alt="Instalación de TermuxPy"> <br>
 
+## Scripts
+To simplify the scripts the following changes have been made: <br>
+lualatex2ca and lualatex2c will be integrated in "lualatex2" <br>
+ppdflatex2ca and pdflatex2c will be integrated in "pdflatex2" <br>
+ 
 
+### lualatex2
+This command will compile the .tex file with lualatex <br>
+The general form of use is the following:
+`` ``
+lualatex2 [-options] file.tex
+`` ``
+Options: <br>
+-b, If the .tex file contains references like bibtex, apacite ... <br>
+-o, If you want to open the PDF file automatically after compilation. <br>
+If there are no options, only the PDF file will be compiled. <br>
+Examples: <br>
+Compile:
+````
+lualatex2 file.tex
+````
+Compile and open automatically:
+````
+lualatex2 -o file.tex
+````
+Compile, generate references and automatically open:
+````
+lualatex2 -ob file.tex
+````
+It can also be used:
+````
+lualatex2 -bo file.tex
+````
 
+### pdflatex2
+This command will compile the .tex file with pdflatex <br>
+The general form of use is the following:
+````
+pdflatex2 [-options] archivo.tex
+````
+Options: <br>
+-b, If the .tex file contains references like bibtex, apacite ... <br>
+-o, If you want to open the PDF file automatically after compilation. <br>
+If there are no options, only the PDF file will be compiled. <br>
+Examples: <br>
+Compile:
+````
+pdflatex2 archivo.tex
+````
+Compile and open automatically:
+````
+pdflatex2 -o file.tex
+````
+Compile, generate references and open automatically:
+````
+pdflatex2 -ob file.tex
+````
+It can also be used:
+````
+pdflatex2 -bo file.tex
+````
 
 ## Example
-This repository has an example to be able to create a PDF document from a file in LaTeX <br>
-
-### 1) Go to the example folder
-For each of the following 4 commands it was executed inside the example folder. <br> <br>
-Write the following command in termux: <br>
+This repository has an example to use with termuxtex. <br>
+Inside the termuxtex folder write the following: <br>
 ````
-cd ejemplo
+cd example
 ````
 <br>
+<img src = "images/ejemplo_1.jpg" width = "75%" alt = "Example"> <br> <br>
 
-<img src="images/ejemplo_1.jpg" width="75%" alt="Ejemplo"> <br><br>
+Since the example has bibliographic references, the following can be used: <br>
+`` ``
+pdflatex2 -bo tarea1.tex
+`` ``
+<img src = "images/pdflatex2_1.jpg" width = "75%" alt = "pdflatex_1"> <br> <br>
+Wait for it to finish compiling: <br>
+<img src = "images/pdflatex2_2.jpg" width = "75%" alt = "pdflatex_2"> <br>
 
-<b>There are 4 pre-installed commands together with termuxtex, which automate the compilation of the file in LaTeX</b><br>
+It can also be compiled using lualatex2:
+`` ``
+lualatex2 -bo tarea1.tex
+`` ``
 
-### Command 1) lualatex2ca (recommended)
-This command automatically compiles and opens the PDF generated file. <br>
-You must first write lualatex2ca followed by the main file name in LaTeX <b> WITHOUT the .tex extension </b> <br>
+Once compiled the file will be open automatically: <br>
+<img src = "images/ejemplo_pdf.jpg" width = "75%" alt = "pdflatex_2"> <br>
 
-Example: <br>
-````
-lualatex2ca tarea1
-````
-<br>
-<img src="images/lualatex2ca_1.jpg" width="75%" alt="Ejemplo"> <br>
-
-
-Wait for it to finish compiling ... <br>
-<img src="images/lualatex2ca_2.jpg" width="75%" alt="Ejemplo"> <br>
-Generated PDF (the PDF will be saved in the folder where it is being executed):
- 
-<img src="images/lualatex2ca_3.jpg" width="75%" alt="Ejemplo"> <br>
- 
-### Command 2) lualatex2c
-This command only compiles to a PDF file. <br>
-You must first write lualatex2c followed by the main file name in LaTeX <b> WITHOUT the .tex extension </b> <br>
-Example: <br>
-````
-lualatex2c tarea1
-````
-<br>
-<img src="images/lualatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
-
-Wait for it to finish compiling ... <br>
-<img src="images/lualatex2c_2.jpg" width="75%" alt="Ejemplo"> <br>
-
-### Command 3) pdflatex2ca
-This command automatically compiles and opens the PDF generated file. <br>
-You must first write pdflatex2ca followed by the main file name in LaTeX <b> WITHOUT the .tex extension </b> <br>
-
-Example: <br>
-````
-pdflatex2ca tarea1
-````
-<br>
-<img src="images/pdflatex2ca_1.jpg" width="75%" alt="Ejemplo"> <br>
-
-
-Wait for it to finish compiling ... <br>
-<img src = "images/lualatex2ca_2.jpg" width = "75%" alt = "Example"> <br>
-Generated PDF (the PDF will be saved in the folder where it is being executed):
- 
-<img src="images/lualatex2ca_3.jpg" width="75%" alt="Ejemplo"> <br>
-
-
-### Command 4) pdflatex2c
-This command only compiles to a PDF file. <br>
-First write pdflatex2c followed by the main file name in LaTeX <b> WITHOUT the extension .tex </b> <br>
-Example: <br>
-````
-pdflatex2c tarea1
-````
-<br>
-<img src="images/pdflatex2c_1.jpg" width="75%" alt="Ejemplo"> <br>
-
-Wait for it to finish compiling ... <br>
-<img src="images/lualatex2c_2.jpg" width="75%" alt="Ejemplo"> <br>
+To see the full list of options that can be passed to lualatex2 and pdflatex2 see: [Scripts](#Scripts)
 
 
 
