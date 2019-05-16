@@ -204,7 +204,7 @@ To see the full list of options that can be passed to lualatex2 and pdflatex2 se
 
 
 ## Made by
-[Natan Vilchis] (https://natanvilchis.org) <br> 
+[Natan Vilchis](https://natanvilchis.org) <br> 
 
 ## License
 This project is licensed under the MIT license, see [LICENSE](LICENSE) to see the details.
