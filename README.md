@@ -33,10 +33,6 @@ Un script automatizado para instalar LaTeX y sus principales bibliotecas para Te
     - [lualatex2](#lualatex2)
     - [pdflatex2](#pdflatex2)
   - [Ejemplo](#ejemplo)
-    - [1) Dirigirse a la carpeta ejemplo ](#1-Dirigirse-a-la-carpeta-ejemplo)
-    - [Cambios en los scripts](#cambios-en-los-scripts)
-    - [Comando 1) lualatex2)](#Comando-1-lualatex2)
-    - [Comando 2) pdflatex2)](#Comando-3-pdflatex2)
     
 	
 ## Notas de la versión
@@ -98,7 +94,7 @@ cd termuxtex
 <img src="images/termuxtex_3.jpg" width="75%" alt="Instalación de TermuxPy"> <br>
 
 ### 3) Instalación limpia
-Si no ha instalado termuxtex en este dispositivo omita este paso. <br>
+If you have not installed termuxtex on this device, skip this step. <br>
 Se recomienda realizar una instalación limpia si actualmente ya está instalado termuxtex en Termux, esto con la finalidad de evitar posibles errores como el siguiente: [Latex can't find .sty files altough packages are installed](https://tex.stackexchange.com/questions/158700/latex-cant-find-sty-files-altough-packages-are-installed-texlive-ubuntu-12). <br>
 Los siguientes comandos purgarán la instalación vieja de LaTeX y eliminarán los archivos de configuración viejos. <br>
 Para realizar la instalación limpia se debe escribir lo siguiente en Termux:
@@ -121,7 +117,7 @@ Esperar a que termine la instalación:
 ## Scripts
 Para simplificar los scripts se han hecho los siguientes cambios:<br>
 lualatex2ca y lualatex2c estarán integrados en "lualatex2" <br>
-ppdflatex2ca y pdflatex2c estarán integrados en "pdflatex2" <br>
+pdflatex2ca y pdflatex2c estarán integrados en "pdflatex2" <br>
  
 
 ### lualatex2
@@ -133,6 +129,8 @@ lualatex2 [-opciones] archivo.tex
 Opciones:<br>
 -b, Si el archivo.tex contiene referencias como bibtex, apacite...<br>
 -a, Si desea abrir el archivo PDF automáticamente después de la compilación.<br>
+-o, Si desea abrir el archivo PDF automáticamente después de la compilación (Mismo que -a).<br>
+
 Si no hay opciones solamente se compilará el archivo en PDF.<br>
 Ejemplos de uso:<br>
 Compilar solamente:  
@@ -182,7 +180,8 @@ pdflatex2 -ba archivo.tex
 
 
 ## Ejemplo
-Este repositorio cuenta con un archivo .tex de ejemplo. Dentro de la carpeta termuxtex escribir lo siguiente: <br>
+Este repositorio cuenta con un archivo .tex de ejemplo. <br>
+Dentro de la carpeta termuxtex escribir lo siguiente: <br>
 ````
 cd ejemplo
 ````
