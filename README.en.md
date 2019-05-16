@@ -119,9 +119,9 @@ ppdflatex2ca and pdflatex2c will be integrated in "pdflatex2" <br>
 ### lualatex2
 This command will compile the .tex file with lualatex <br>
 The general form of use is the following:
-`` ``
+````
 lualatex2 [-options] file.tex
-`` ``
+````
 Options: <br>
 -b, If the .tex file contains references like bibtex, apacite ... <br>
 -o, If you want to open the PDF file automatically after compilation. <br>
@@ -190,9 +190,9 @@ Wait for it to finish compiling: <br>
 <img src = "images/pdflatex2_2.jpg" width = "75%" alt = "pdflatex_2"> <br>
 
 It can also be compiled using lualatex2:
-`` ``
+````
 lualatex2 -bo tarea1.tex
-`` ``
+````
 
 Once compiled the file will be open automatically: <br>
 <img src = "images/ejemplo_pdf.jpg" width = "75%" alt = "pdflatex_2"> <br>
