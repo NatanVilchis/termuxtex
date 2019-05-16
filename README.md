@@ -159,6 +159,8 @@ pdflatex2 [-opciones] archivo.tex
 Opciones:<br>
 -b, Si el archivo.tex contiene referencias como bibtex, apacite...<br>
 -a, Si desea abrir el archivo PDF automáticamente después de la compilación.<br>
+-o, Si desea abrir el archivo PDF automáticamente después de la compilación (Mismo que -a).<br>
+
 Si no hay opciones solamente se compilará el archivo en PDF.<br>
 Ejemplos de uso:<br>
 Compilar solamente:  
