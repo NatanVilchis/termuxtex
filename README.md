@@ -186,11 +186,13 @@ cd ejemplo
 
 Como el ejemplo tiene referencias bibliográficas se puede usar lo siguiente:<br>
 ````
-pdflatex2 -ba archivo.tex
+pdflatex2 -ba tarea1.tex
 ````
+
+
 También puede compilarse usando lualatex2:
 ````
-lualatex2 -ba archivo.tex
+lualatex2 -ba tarea1.tex
 ````
 Para ver la lista de opciones que pueden pasarse a lualatex2 y pdflatex2 ver: [Scripts](#Scripts)
 
