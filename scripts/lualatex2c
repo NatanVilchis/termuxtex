@@ -1,7 +1,56 @@
-texliveonfly $1
-pdflatex $1 
-lualatex $1 
-makeindex $1
-bibtex $(basename $1 .tex) 
-lualatex $1 
-lualatex $1
+function echo2(){
+  echo -e "\033[32m$@\033[0m"
+}
+function error(){
+  echo -e "\033[1;31m$@\033[0m"
+  exit 1
+}
+function ayuda(){
+  echo2 "pdflatex2c"
+  echo2 "Script para compilar a PDF un archivo .tex"
+  echo2 "Existen dos opciones de uso:"
+  echo2 "==> Opción 1: Si el archivo .tex no tiene referencias bibliográficas como bibtex usar:"
+  echo2 "pdflatex2c archivo.tex"
+  echo2 "==> Opción 2: Si el archivo .tex sí tiene referencias bibliográficas como bibtex usar:"
+  echo2 "pdflatex2c -b archivo.tex"  
+}
+if [[ "$#" == 0 || "$#" > 2 ]]; then
+  ayuda
+  exit 1
+fi
+if [ "$#" == "1" ]; then
+  if [[ $1 ==*.tex ]]; then
+    echo2 "Compilando..."
+    texliveonfly $1
+    pdflatex $1 
+    lualatex $1 
+    makeindex $1
+    bibtex $(basename $1 .tex) 
+    lualatex $1 
+    lualatex $1
+  else
+    ayuda
+    echo "Error: No se escribió un archivo con terminación .tex"
+  fi
+fi
+
+if [ "$#" == "2" ]; then
+  if [[ $2 == *.tex ]]; then
+    if [ $1 == "-b" ]; then
+      echo2 "Compilando..."
+      texliveonfly $2
+      pdflatex $2
+      lualatex $2 
+      makeindex $2
+      bibtex $(basename $2 .tex) 
+      lualatex $2
+      lualatex $2
+    else
+      ayuda
+      error "Error: Debe usarse la opción -b"
+    fi
+  else
+    ayuda
+    echo "Error: No se escribió un archivo con terminación .tex"
+  fi
+fi
