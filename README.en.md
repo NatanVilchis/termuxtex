@@ -113,7 +113,7 @@ Wait for the installation to finish:
 ## Scripts
 To simplify the scripts the following changes have been made: <br>
 lualatex2ca and lualatex2c will be integrated in "lualatex2" <br>
-ppdflatex2ca and pdflatex2c will be integrated in "pdflatex2" <br>
+pdflatex2ca and pdflatex2c will be integrated in "pdflatex2" <br>
  
 
 ### lualatex2
@@ -125,6 +125,7 @@ lualatex2 [-options] file.tex
 Options: <br>
 -b, If the .tex file contains references like bibtex, apacite ... <br>
 -o, If you want to open the PDF file automatically after compilation. <br>
+-a, If you want to open the PDF file automatically after compilation (Same that -o). <br>
 If there are no options, only the PDF file will be compiled. <br>
 Examples: <br>
 Compile:
