@@ -1,6 +1,0 @@
-texliveonfly $1
-pdflatex $1 
-makeindex $1 
-bibtex $(basename $1 .tex) 
-pdflatex $1 
-pdflatex $1
