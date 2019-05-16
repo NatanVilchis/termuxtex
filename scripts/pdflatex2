@@ -1,0 +1,81 @@
+function echo2(){
+  echo -e "\033[32m$@\033[0m"
+}
+function error(){
+  echo -e "\033[1;31m$@\033[0m" 1>&2
+  exit 1
+}
+function ayuda(){
+	echo2 "pdflatex2"
+	echo2 "Script para compilar a PDF un archivo .tex"
+	echo2 "Uso:"
+	echo2 "pdflatex2 [-opciones] archivo.tex"
+	echo2 "Opciones:"
+	echo2 "-b, Si el archivo.tex contiene referencias como bibtex, apacite..."
+	echo2 "-a, Si desea abrir el archivo automáticamente después de la compilación"
+	echo2 "-o, If you want to open the file after compilation"
+	echo2 "Si no hay opciones se compilará el archivo solamente."
+	echo2 "Ejemplos:"
+	echo2 "pdflatex2 archivo.tex"
+	echo2 "pdflatex2 -a archivo.tex"
+	echo2 "pdflatex2 -b archivo.tex"
+	echo2 "pdflatex2 -ab archivo.tex"
+	echo2 "pdflatex2 -ba archivo.tex"
+}
+
+if [[ "$#" == 0 || "$#" > 2 ]]; then
+  ayuda
+  exit 1
+fi
+
+
+if [ "$#" == "1" ]; then
+  if [[ $1 == *.tex ]]; then
+    echo2 "Compilando..."
+    texliveonfly $1
+    pdflatex $1
+    pdflatex $1
+    pdflatex $1
+  else
+    ayuda
+    error "Error: No se escribió un archivo con terminación .tex"
+  fi
+fi
+
+if [ "$#" == "2" ]; then
+	case $1 in
+		-b)
+			texliveonfly $2
+			pdflatex $2 
+			makeindex $2
+			bibtex $(basename $2 .tex) 
+			pdflatex $2
+			pdflatex $2
+		;;
+		
+		-a|-o)
+			texliveonfly $2
+			pdflatex $2 
+			pdflatex $2
+			pdflatex $2
+			termux-open $(basename $2 .tex).pdf
+		;;
+		
+		-ab|-ba|-bo|-ob)
+			texliveonfly $2
+			pdflatex $2 
+			makeindex $2
+			bibtex $(basename $2 .tex) 
+			pdflatex $2
+			pdflatex $2
+			termux-open $(basename $2 .tex).pdf
+		;;  
+		
+		*)
+			ayuda
+			error "Argumento desconocido: ${1}"
+		;;
+	esac
+fi
+
+ 
